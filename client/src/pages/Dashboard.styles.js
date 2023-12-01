@@ -5,13 +5,13 @@ export const Container = styled.div`
     width : 100%;
     color : white;
     min-height : 100vh;
-    display : flex;
+    // display : flex;
 `
 
 
 export const Main = styled.div`
-    flex-basis = 0.8%;
-    width : 80%;
+    // flex-basis = 0.8%;
+    // width : 80%;
     padding : 5rem;
     color : black;
 `
