@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a80a7f6d-049e-4892-952a-4e484d042c8a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryotakisse/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryotakisse/TalentHunterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryotakisse/TalentHunterApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryotakisse/TalentHunterApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryotakisse/TalentHunterApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryotakisse/TalentHunterApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryotakisse/TalentHunterApplication.class" afterDir="false" />
-    </list>
+    <list default="true" id="a80a7f6d-049e-4892-952a-4e484d042c8a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,7 +53,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "develop",
+    "git-widget-placeholder": "back",
     "last_opened_file_path": "/home/kassi/Desktop/Projects/Professionnel-Social-Platform/talent-hunter-back",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -118,7 +111,7 @@
       <workItem from="1701420965486" duration="427000" />
       <workItem from="1701421405514" duration="75000" />
       <workItem from="1701421495310" duration="31000" />
-      <workItem from="1701421567044" duration="7078000" />
+      <workItem from="1701421567044" duration="7522000" />
     </task>
     <servers />
   </component>
