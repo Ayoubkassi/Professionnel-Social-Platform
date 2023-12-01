@@ -5,29 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a80a7f6d-049e-4892-952a-4e484d042c8a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../client/src/components/MUINavbar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryotakisse/TalentHunterApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryotakisse/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryotakisse/TalentHunterApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/ryotakisse/TalentHunterApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/ryotakisse/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/ryotakisse/TalentHunterApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/pages/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/Dashboard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/pages/Dashboard.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/Dashboard.styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryotakisse/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryotakisse/TalentHunterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryotakisse/TalentHunterApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryotakisse/TalentHunterApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryotakisse/TalentHunterApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryotakisse/TalentHunterApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryotakisse/TalentHunterApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -76,7 +60,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "back",
+    "git-widget-placeholder": "develop",
     "last_opened_file_path": "/home/kassi/Desktop/Projects/Professionnel-Social-Platform/talent-hunter-back",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -134,7 +118,7 @@
       <workItem from="1701420965486" duration="427000" />
       <workItem from="1701421405514" duration="75000" />
       <workItem from="1701421495310" duration="31000" />
-      <workItem from="1701421567044" duration="6165000" />
+      <workItem from="1701421567044" duration="7078000" />
     </task>
     <servers />
   </component>
