@@ -10,4 +10,7 @@ class TalentHunterApplicationTests {
 	void contextLoads() {
 	}
 
+	// for db tests
+//	INSERT INTO platform_user (id,email,password,username) VALUES(nextval('user_id_sequence'),'Ayoub','password','ayoub@gmail.com');
+
 }
