@@ -9,3 +9,17 @@ Development of a web application for sharing job offers to connect recruiters an
 <h3>Screen</h3>
 
 ![alt](screens/scr1.png)
+
+---
+
+> run applictaion
+> enter my database and play with my data
+
+first : create my docker container
+we have in our root back-end project file named : docker-compose.yml
+we can run this command : docker compose up -d
+after : docker compose ps
+enter ur container in interactive mode : sudo docker exec -it postgres bash
+to use psql : psql -U ayoubkassi
+switch into our db : \c talenthunter
+show tables : \dt
