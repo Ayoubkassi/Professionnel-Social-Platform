@@ -132,6 +132,20 @@ public class TalentHunterApplication {
 				.orElseThrow(() -> new RuntimeException("Job not found with id: " + id));
 	}
 
+	// add method so that a user can postule to a job
+	@PostMapping("users/{userId}/apply/{jobId}")
+	public void applyForJob(@PathVariable("userId") Integer userId, @PathVariable("jobId") Integer jobId) {
+		User user = userRepository.findById(userId)
+				.orElseThrow(() -> new RuntimeException("User not found with id: " + userId));
+
+		JobOffer jobOffer = jobOfferRepository.findById(jobId)
+				.orElseThrow(() -> new RuntimeException("Job offer not found with id: " + jobId));
+
+		user.applyForJob(jobOffer);
+
+		userRepository.save(user);
+		jobOfferRepository.save(jobOffer);
+	}
 
 
 

@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a80a7f6d-049e-4892-952a-4e484d042c8a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryotakisse/UserType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Feed.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Feed.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/HeaderOption.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/HeaderOption.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Post.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Post.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Post.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryotakisse/JobOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryotakisse/JobOffer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ryotakisse/TalentHunterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryotakisse/TalentHunterApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryotakisse/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryotakisse/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +31,7 @@
       <list>
         <option value="Class" />
         <option value="Interface" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -123,7 +131,7 @@
       <workItem from="1701938715057" duration="5270000" />
       <workItem from="1701958881678" duration="711000" />
       <workItem from="1702132781989" duration="1760000" />
-      <workItem from="1702218421591" duration="2360000" />
+      <workItem from="1702218421591" duration="4349000" />
     </task>
     <servers />
   </component>

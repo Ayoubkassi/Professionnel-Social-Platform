@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 
 import java.util.Date;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Table(name = "jobOffer")
@@ -21,6 +22,9 @@ public class JobOffer {
     private  String type;
     private  String salary;
     private Date date;
+
+    @ManyToMany
+    Set<User> candidates;
 
 
     public JobOffer(){
@@ -93,6 +97,9 @@ public class JobOffer {
         this.date = date;
     }
 
+    public void addCandidate(User user) {
+        candidates.add(user);
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -100,6 +107,14 @@ public class JobOffer {
         if (o == null || getClass() != o.getClass()) return false;
         JobOffer jobOffer = (JobOffer) o;
         return Objects.equals(id, jobOffer.id) && Objects.equals(title, jobOffer.title) && Objects.equals(description, jobOffer.description) && Objects.equals(location, jobOffer.location) && Objects.equals(type, jobOffer.type) && Objects.equals(salary, jobOffer.salary) && Objects.equals(date, jobOffer.date);
+    }
+
+    public Set<User> getCandidates(){
+        return candidates;
+    }
+
+    public void setCandidates(Set<User> candidates){
+        this.candidates = candidates;
     }
 
     @Override

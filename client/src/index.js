@@ -8,6 +8,7 @@ import "./index.css";
 import App from "./App";
 import Login from "./pages/Login";
 import EditProfile from "./pages/EditProfile";
+import CreateJob from "./pages/CreatJob";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,9 @@ const router = createBrowserRouter([
   } , {
     path : "/edit",
     element : <EditProfile />
+  }, {
+    path : "/job",
+    element : <CreateJob />
   }
 ]);
 
