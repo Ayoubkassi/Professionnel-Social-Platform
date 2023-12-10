@@ -47,13 +47,13 @@ public class TalentHunterApplication {
 	}
 
 
-	@DeleteMapping("users/{customerId}")
-	public void deleteUser(@PathVariable("customerId") Integer id){
+	@DeleteMapping("users/{userId}")
+	public void deleteUser(@PathVariable("userId") Integer id){
 		userRepository.deleteById(id);
 	}
 
-	@PutMapping("users/{customerId}")
-	public void updateUser(@PathVariable("customerId") Integer id, @RequestBody NewUserRequest request){
+	@PutMapping("users/{userId}")
+	public void updateUser(@PathVariable("userId") Integer id, @RequestBody NewUserRequest request){
 		User existingUser = userRepository.findById(id)
 				.orElseThrow(() -> new RuntimeException("User not found with id: " + id));
 
@@ -66,8 +66,8 @@ public class TalentHunterApplication {
 		userRepository.save(existingUser);
 	}
 
-	@GetMapping("users/{customerId}")
-	public User getUserById(@PathVariable("customerId") Integer id) {
+	@GetMapping("users/{userId}")
+	public User getUserById(@PathVariable("userId") Integer id) {
 		return userRepository.findById(id)
 				.orElseThrow(() -> new RuntimeException("User not found with id: " + id));
 	}
