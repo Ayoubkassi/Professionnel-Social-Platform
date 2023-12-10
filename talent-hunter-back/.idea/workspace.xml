@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a80a7f6d-049e-4892-952a-4e484d042c8a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryotakisse/JobOffer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryotakisse/JobOfferRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryotakisse/TalentHunterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryotakisse/TalentHunterApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryotakisse/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryotakisse/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryotakisse/TalentHunterApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryotakisse/TalentHunterApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryotakisse/TalentHunterApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryotakisse/TalentHunterApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryotakisse/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryotakisse/User.class" afterDir="false" />
-    </list>
+    <list default="true" id="a80a7f6d-049e-4892-952a-4e484d042c8a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,7 +117,7 @@
       <workItem from="1701421567044" duration="7522000" />
       <workItem from="1701938715057" duration="5270000" />
       <workItem from="1701958881678" duration="711000" />
-      <workItem from="1702132781989" duration="1638000" />
+      <workItem from="1702132781989" duration="1760000" />
     </task>
     <servers />
   </component>
