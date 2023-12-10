@@ -3,6 +3,7 @@ package com.ryotakisse;
 import jakarta.persistence.*;
 
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Table(name = "platformUser")
@@ -21,6 +22,14 @@ public class User {
     private String contactInformation;
     @Enumerated(EnumType.STRING)
     private Gender gender;
+
+    @Enumerated(EnumType.STRING)
+    private UserType userType;
+    @OneToMany
+    private Set<JobOffer> createdJobs;
+
+    @ManyToMany
+    Set<JobOffer> appliedJobs;
 
     public User(Integer id, String email, String username, String password) {
         this.id = id;
@@ -103,6 +112,11 @@ public class User {
 
     public String getContactInfromation() {
         return this.contactInformation;
+    }
+
+    public void applyForJob(JobOffer jobOffer) {
+        appliedJobs.add(jobOffer);
+        jobOffer.getCandidates().add(this);
     }
 
     @Override

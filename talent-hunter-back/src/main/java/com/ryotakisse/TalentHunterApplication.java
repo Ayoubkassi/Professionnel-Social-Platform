@@ -47,13 +47,13 @@ public class TalentHunterApplication {
 	}
 
 
-	@DeleteMapping("users/{customerId}")
-	public void deleteUser(@PathVariable("customerId") Integer id){
+	@DeleteMapping("users/{userId}")
+	public void deleteUser(@PathVariable("userId") Integer id){
 		userRepository.deleteById(id);
 	}
 
-	@PutMapping("users/{customerId}")
-	public void updateUser(@PathVariable("customerId") Integer id, @RequestBody NewUserRequest request){
+	@PutMapping("users/{userId}")
+	public void updateUser(@PathVariable("userId") Integer id, @RequestBody NewUserRequest request){
 		User existingUser = userRepository.findById(id)
 				.orElseThrow(() -> new RuntimeException("User not found with id: " + id));
 
@@ -66,8 +66,8 @@ public class TalentHunterApplication {
 		userRepository.save(existingUser);
 	}
 
-	@GetMapping("users/{customerId}")
-	public User getUserById(@PathVariable("customerId") Integer id) {
+	@GetMapping("users/{userId}")
+	public User getUserById(@PathVariable("userId") Integer id) {
 		return userRepository.findById(id)
 				.orElseThrow(() -> new RuntimeException("User not found with id: " + id));
 	}
@@ -132,6 +132,20 @@ public class TalentHunterApplication {
 				.orElseThrow(() -> new RuntimeException("Job not found with id: " + id));
 	}
 
+	// add method so that a user can postule to a job
+	@PostMapping("users/{userId}/apply/{jobId}")
+	public void applyForJob(@PathVariable("userId") Integer userId, @PathVariable("jobId") Integer jobId) {
+		User user = userRepository.findById(userId)
+				.orElseThrow(() -> new RuntimeException("User not found with id: " + userId));
+
+		JobOffer jobOffer = jobOfferRepository.findById(jobId)
+				.orElseThrow(() -> new RuntimeException("Job offer not found with id: " + jobId));
+
+		user.applyForJob(jobOffer);
+
+		userRepository.save(user);
+		jobOfferRepository.save(jobOffer);
+	}
 
 
 

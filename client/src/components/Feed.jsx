@@ -16,7 +16,6 @@ const Feed = () => {
     e.preventDefault();
 
 
-    //setPosts([...posts,])
   }
 
 
@@ -39,7 +38,7 @@ const Feed = () => {
         </div>
       </div> 
 
-        { posts.map(post =>  <Post name="Ayoub Kassi" description="This is description test" message="This is message test"/>) }
+        { posts.map(post =>  <Post name="Hamid Zghanghan" description="Recruiter in Datadog" message="We are recruiting for our summer internships software engineering , be ready and pick ur keyboard!!"/>) }
      
     </div>
   )
