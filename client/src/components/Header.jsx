@@ -9,13 +9,15 @@ import HomeIcon from '@mui/icons-material/Home';
 import GroupIcon from '@mui/icons-material/Group';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import NotificationsIcon from '@mui/icons-material/Notifications';
+import myImage from './../assets/me.jpg' 
+
 
 const Header = () => {
 
   return (
     <div className="header">
       <div className="header__left">
-            <WorkIcon sx={{color: "#0e1344"}} style={{ fontSize: 38 }} />
+            <WorkIcon sx={{color: "white"}} style={{ fontSize: 38 }} />
             <div className="header__search">
             <Paper
                 component="form"
@@ -38,7 +40,7 @@ const Header = () => {
             <HeaderOption title="My Network" Icon={GroupIcon} />
             <HeaderOption title = "Jobs" Icon={ LocalOfferIcon } />
             <HeaderOption title = "Notifications" Icon={NotificationsIcon} />
-            <HeaderOption title="me" avatar="https://ibb.co/pX1K7WR" />
+            <HeaderOption title="me" avatar={myImage} />
       </div>
     </div>
   )

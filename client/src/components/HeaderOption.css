@@ -2,13 +2,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: gray;
+    color: white;
     margin-right: 20px;
     cursor: pointer;
 }
 
 .headerOption:hover{
-    color: black;
+    color: white;
 }
 
 .headerOption__title{
