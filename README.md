@@ -10,7 +10,15 @@ Development of a web application for sharing job offers to connect recruiters an
 
 ## ![alt](screens/scr1.png)
 
-![alt](screens/scr2.png)
+## ![alt](screens/scr2.png)
+
+## ![alt](screens/scr3.png)
+
+## ![alt](screens/scr4.png)
+
+## ![alt](screens/scr5.png)
+
+![alt](screens/scr6.png)
 
 ---
 
