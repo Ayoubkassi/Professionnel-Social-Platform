@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a80a7f6d-049e-4892-952a-4e484d042c8a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../client/src/components/Feed.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Feed.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryotakisse/CorsConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/Login.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryotakisse/TalentHunterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryotakisse/TalentHunterApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryotakisse/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryotakisse/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryotakisse/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryotakisse/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryotakisse/TalentHunterApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryotakisse/TalentHunterApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryotakisse/TalentHunterApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryotakisse/TalentHunterApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +24,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -129,7 +127,7 @@
       <workItem from="1701958881678" duration="711000" />
       <workItem from="1702132781989" duration="1760000" />
       <workItem from="1702218421591" duration="4349000" />
-      <workItem from="1702494693905" duration="3240000" />
+      <workItem from="1702494693905" duration="4255000" />
     </task>
     <servers />
   </component>
