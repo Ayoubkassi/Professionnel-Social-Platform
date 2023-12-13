@@ -1,9 +1,10 @@
-import React from 'react'
+import React , { useState } from 'react'
 import { Container, Left , Right , Logo , Span , Rights , Title , Description , LogTitle ,LogInfo , ForgotPass , OrDiv , NewUser} from './Login.styles'
 import TextField from '@mui/material/TextField';
 import Button , { ButtonProps } from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
-
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 
 const BootstrapButton = styled(Button)({
@@ -31,6 +32,30 @@ const BootstrapButton = styled(Button)({
 
 
 const Signup = () => {
+
+    const [email, setEmail] = useState('');
+    const [userName, setUserName] = useState('');
+    const [password, setPassword] = useState('');
+    const navigate = useNavigate();
+
+    const handleSignUp = async () => {
+        try {
+          const response = await axios.post('http://localhost:5000/api/v1/users', {
+            email: email,
+            password: password,
+            username : userName
+          });
+    
+          // Handle successful login here, e.g., redirect to another page
+          console.log('Signup successful', response.data);
+          // Redirect to the home page
+          navigate('/');
+        } catch (error) {
+          // Handle login error here
+          console.error('Signup failed', error.response.data);
+        }
+      };
+
   return (
     <Container>
         <Left>
@@ -42,16 +67,30 @@ const Signup = () => {
         <Right>
             <LogTitle>Sign up in Talent Hunter</LogTitle>
             <LogInfo>Enter your email and password to signu up</LogInfo>
-            <TextField style={{ marginBottom: '20px' }} id="outlined-basic" label="Username" variant="outlined" />
-            <TextField id="outlined-basic" label="Email" variant="outlined" />
-            <TextField
-                id="outlined-password-input"
-                label="Password"
-                type="password"
-                autoComplete="current-password"
-                style={{margin : '30px 0'}}
+            <TextField style={{ marginBottom: '20px' }} 
+                id="outlined-basic" 
+                label="Username" 
+                variant="outlined"
+                value={userName}
+                onChange={(e) => setUserName(e.target.value)}
             />
-        <BootstrapButton style={{ marginBottom : '20px' }} variant="contained" disableRipple>
+            <TextField
+              id="outlined-basic"
+              label="Email"
+              variant="outlined"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <TextField
+              id="outlined-password-input"
+              label="Password"
+              type="password"
+              autoComplete="current-password"
+              style={{ margin: '30px 0' }}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+        <BootstrapButton style={{ marginBottom : '20px' }} variant="contained" disableRipple onClick={handleSignUp}>
             Sign Up
         </BootstrapButton>
         <ForgotPass>Forgot your password?</ForgotPass>
