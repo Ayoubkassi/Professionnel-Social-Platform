@@ -12,7 +12,6 @@ export const Left = styled.div`
     background : #0e1344;
     color : white;
     padding : 4rem;
-
     display : flex;
     flex-direction : column;
     justify-content : space-between;
@@ -82,6 +81,8 @@ export const Logo = styled.h1`
     color : white;
     color : #9485d6;
     flex-basis : 20%;
+    text-align : left;
+
 `
 
 export const Span = styled.span`
@@ -97,6 +98,10 @@ export const Rights = styled.div`
 export const Title = styled.h1`
     font-size : 46px;
     flex-basis : 10%;
+    color : white;
+    text-align : left;
+    margin-bottom : 5px;
+
 `
 
 export const Description = styled.p`

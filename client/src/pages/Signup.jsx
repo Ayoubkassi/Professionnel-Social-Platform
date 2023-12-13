@@ -30,7 +30,7 @@ const BootstrapButton = styled(Button)({
 
 
 
-const Login = () => {
+const Signup = () => {
   return (
     <Container>
         <Left>
@@ -40,8 +40,9 @@ const Login = () => {
             <Rights>2023 © Talent Hunter Technologies. All Rights Reserved.</Rights>
         </Left>
         <Right>
-            <LogTitle>Log in to Talent Hunter</LogTitle>
-            <LogInfo>Enter your email and password to log in</LogInfo>
+            <LogTitle>Sign up in Talent Hunter</LogTitle>
+            <LogInfo>Enter your email and password to signu up</LogInfo>
+            <TextField style={{ marginBottom: '20px' }} id="outlined-basic" label="Username" variant="outlined" />
             <TextField id="outlined-basic" label="Email" variant="outlined" />
             <TextField
                 id="outlined-password-input"
@@ -50,15 +51,15 @@ const Login = () => {
                 autoComplete="current-password"
                 style={{margin : '30px 0'}}
             />
-        <BootstrapButton variant="contained" disableRipple>
-            Login 
+        <BootstrapButton style={{ marginBottom : '20px' }} variant="contained" disableRipple>
+            Sign Up
         </BootstrapButton>
         <ForgotPass>Forgot your password?</ForgotPass>
 
         <OrDiv>Or</OrDiv>
-        <NewUser>New to Talent Hunter ?<br/><br/>
+        <NewUser>Already have account in Talent Hunter?<br/><br/>
         <BootstrapButton variant="contained" disableRipple>
-        <a style={{ color : 'white'  , textDecoration : 'none'}} href="/signup"> Create an account </a>
+            <a style={{ color : 'white'  , textDecoration : 'none'}} href="/login"> Sign in into your account </a>
         </BootstrapButton>
         </NewUser>
        
@@ -67,4 +68,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Signup
