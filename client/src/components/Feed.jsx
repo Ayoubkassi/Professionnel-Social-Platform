@@ -14,8 +14,6 @@ const Feed = () => {
 
   const createPost = (e) => {
     e.preventDefault();
-
-
   }
 
 
