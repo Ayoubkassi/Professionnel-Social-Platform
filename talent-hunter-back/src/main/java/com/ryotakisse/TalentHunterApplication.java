@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Date;
 import java.util.List;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 @SpringBootApplication
 @RestController
 @RequestMapping("/api/v1")
@@ -146,6 +148,35 @@ public class TalentHunterApplication {
 		userRepository.save(user);
 		jobOfferRepository.save(jobOffer);
 	}
+
+
+	// add some simple login and logout functinality for the user
+	// check login
+	// for the login it will be a basic post REquest with data which is login and pasword
+	// so i will craete record specific for it's request
+	record NewLoginRequest(
+			String userlogin ,
+			String passlogin
+	){}
+
+	@PostMapping("users/login")
+	public ResponseEntity<?> loginUser(@RequestBody NewLoginRequest request) {
+		// Find user by login
+		System.out.println("\n\n\nhelloooooooooooo\n\n\n");
+		User user = userRepository.findByUsername(request.userlogin)
+				.orElseThrow(() -> new RuntimeException("User not found with login: " + request.userlogin));
+
+		// Check if the provided password matches the user's password
+		if (user.getPassword().equals(request.passlogin)) {
+			// Passwords match, return 200 response with user instance
+			return ResponseEntity.ok(user);
+		} else {
+			// Passwords do not match, return error response
+			return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
+					.body("Login credentials are invalid");
+		}
+	}
+
 
 
 
