@@ -16,8 +16,11 @@ const Header = () => {
 
   return (
     <div className="header">
+      
       <div className="header__left">
-            <WorkIcon sx={{color: "white"}} style={{ fontSize: 38 }} />
+            <a href="/"  style={{ color : 'inherit' , textDecoration : 'none' }}>
+             <WorkIcon sx={{color: "white"}} style={{ fontSize: 38 }} />
+            </a>
             <div className="header__search">
             <Paper
                 component="form"
@@ -36,9 +39,13 @@ const Header = () => {
             </div>
       </div>
       <div className="header__right">
-            <HeaderOption title="Home" Icon={HomeIcon} />
-            <HeaderOption title="My Network" Icon={GroupIcon} />
+            <a href="/"  style={{ color : 'inherit' , textDecoration : 'none' }}>
+              <HeaderOption title="Home" Icon={HomeIcon} />
+            </a>
+            <HeaderOption title="Candidates" Icon={GroupIcon} />
+            <a href="/myjobs"  style={{ color : 'inherit' , textDecoration : 'none' }}>
             <HeaderOption title = "Jobs" Icon={ LocalOfferIcon } />
+            </a>
             <HeaderOption title = "Notifications" Icon={NotificationsIcon} />
             <HeaderOption title="me" avatar={myImage} />
       </div>

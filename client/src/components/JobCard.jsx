@@ -38,7 +38,8 @@ function JobCard() {
   };
 
   return (
-    <Card sx={{ maxWidth: 345 }} style={{ border: '1px solid lightgray' }} >
+    <Card sx={{ maxWidth: 345  }} style={{ border: '1px solid lightgray' , cursor : 'pointer' }} >
+      <a href="/jobcandidates"  style={{ color : 'inherit' , textDecoration : 'none' }}>
       <CardHeader
         avatar={
           <Avatar src={myImage} sx={{ bgcolor: red[500] }} aria-label="recipe" />
@@ -107,6 +108,7 @@ function JobCard() {
           </Typography>
         </CardContent>
       </Collapse>
+      </a>
     </Card>
   )
 }

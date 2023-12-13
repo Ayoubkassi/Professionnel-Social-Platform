@@ -11,6 +11,7 @@ import EditProfile from "./pages/EditProfile";
 import CreateJob from "./pages/CreatJob";
 import Jobs from "./pages/Jobs";
 import JobCandidates from "./pages/JobCandidates";
+import Signup from "./pages/Signup";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,9 @@ const router = createBrowserRouter([
     path: "/login",
     element:<Login />,
   } , {
+    path: "/signup",
+    element:<Signup />,
+  } ,{
     path : "/edit",
     element : <EditProfile />
   }, {
