@@ -14,18 +14,11 @@ import myImage from '../assets/me.jpg'
 import Button from '@mui/material/Button';
 import DeleteIcon from '@mui/icons-material/Delete';
 
-
 function createData(username, genre, imageUrl, age , action) {
   return { username, genre, imageUrl, age , action  };
 }
 
-const rows = [
-  createData('Ayoub Kassi', 'male', myImage, 23),
-  createData('Youssef Firi', 'male', myImage, 32),
-  createData('Krace Mui', 'male', myImage, 19),
-  createData('Steven bow', 'male', myImage, 24),
-  createData('Amine Sah', 'male', myImage, 27),
-  createData('Steve jiytiens', 'male', myImage, 27),
+const initialRows = [
   createData('Ayoub Kassi', 'male', myImage, 23),
   createData('Youssef Firi', 'male', myImage, 32),
   createData('Krace Mui', 'male', myImage, 19),
@@ -35,6 +28,16 @@ const rows = [
 ];
 
 function JobCandidates() {
+
+  const [rows, setRows] = React.useState(initialRows);
+
+  const handleReject = (username) => {
+
+    const updatedRows = rows.filter((row) => row.username !== username);
+    setRows([...updatedRows]); // Create a new array
+    console.log(rows.length);
+  };
+
   return (
     <div className='job__candidates app'>
       <Header />
@@ -66,7 +69,7 @@ function JobCandidates() {
                 <TableCell align="center" style={{ color : 'white' }} >{row.username}</TableCell>
                 <TableCell align="center" style={{ color : 'white' }}>{row.genre}</TableCell>
                 <TableCell align="center" style={{ color : 'white' }}>{row.age}</TableCell>
-                <TableCell align='center'> <Button variant="outlined" color="error" startIcon={<DeleteIcon />}>Reject</Button> </TableCell>
+                <TableCell align='center'> <Button onClick={() => handleReject(row.username)} variant="outlined" color="error" startIcon={<DeleteIcon />}>Reject</Button> </TableCell>
               </TableRow>
             ))}
           </TableBody>

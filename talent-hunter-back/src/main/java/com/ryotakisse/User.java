@@ -31,11 +31,15 @@ public class User {
     @ManyToMany
     Set<JobOffer> appliedJobs;
 
-    public User(Integer id, String email, String username, String password) {
+
+
+
+    public User(Integer id, String email, String username, String password , UserType userType) {
         this.id = id;
         this.email = email;
         this.username = username;
         this.password = password;
+        this.userType = userType;
     }
 
     public User() {
@@ -48,6 +52,14 @@ public class User {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public UserType getUserType() {
+        return userType;
+    }
+
+    public void setUserType(UserType userType) {
+        this.userType = userType;
     }
 
     public String getEmail() {

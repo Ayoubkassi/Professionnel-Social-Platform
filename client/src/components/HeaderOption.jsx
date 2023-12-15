@@ -3,7 +3,7 @@ import { Avatar } from '@mui/material'
 
 const HeaderOption = ({avatar, Icon , title }) => {
   return (
-    <div className="headerOption">
+    <div className="headerOption" >
       {Icon && <Icon className='headerOption__icon' /> }
       { avatar && 
         <Avatar className='headerOption__icon' sx={{ height: '28px', width: '28px' , color : 'white' }} src={avatar} />

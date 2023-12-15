@@ -13,6 +13,6 @@ class TalentHunterApplicationTests {
 	// for db tests
 //	INSERT INTO platform_user (id,email,password,username) VALUES(nextval('user_id_sequence'),'Ayoub','password','ayoub@gmail.com');
 
-//	INSERT INTO job_offer (id,date,description,location,salary,title,type) VALUES(nextval('offer_id_sequence'),CURRENT_TIMESTAMP,'Back End Engineer','Paris','70k$','SE','FullTime');
+//	INSERT INTO job_offer (id,date,description,location,salary,title,type,creator) VALUES(nextval('offer_id_sequence'),CURRENT_TIMESTAMP,'We are recruiting for our summer internships software engineering , be ready and pick ur keyboard!!','Paris','70k$','SE','FullTime','Chaimae');
 
 }

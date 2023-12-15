@@ -1,18 +1,18 @@
-.editTitle{
+.profileTitle{
     color : #0e1344;
     text-align: center;
     padding: 20px;
 }
 
-.edit{
+.profile{
     background-color: white!important;
 }
 
-.edit__body{
+.profile__body{
     padding: 0 100px;
 }
 
-.edit .rowa{
+.profile .row{
     display: flex;
     width: 100%;
     justify-content: space-evenly;

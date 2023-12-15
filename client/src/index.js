@@ -8,10 +8,12 @@ import "./index.css";
 import App from "./App";
 import Login from "./pages/Login";
 import EditProfile from "./pages/EditProfile";
-import CreateJob from "./pages/CreatJob";
 import Jobs from "./pages/Jobs";
 import JobCandidates from "./pages/JobCandidates";
 import Signup from "./pages/Signup";
+import Profile from "./pages/Profile";
+import JobCreate from "./pages/JobCreate";
+
 
 const router = createBrowserRouter([
   {
@@ -27,19 +29,23 @@ const router = createBrowserRouter([
     path : "/edit",
     element : <EditProfile />
   }, {
-    path : "/craetejob",
-    element : <CreateJob />
+    path : "/jobcreate",
+    element : <JobCreate />
   },{
     path: "/myjobs",
     element : <Jobs />
   },{
     path: "/jobcandidates",
     element : <JobCandidates />
+  },{
+    path : '/profile',
+    element : <Profile />
   }
 ]);
 
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+      <RouterProvider router={router} />
   </React.StrictMode>
 );

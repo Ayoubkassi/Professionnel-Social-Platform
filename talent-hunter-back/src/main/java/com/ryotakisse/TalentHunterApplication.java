@@ -34,7 +34,12 @@ public class TalentHunterApplication {
 	record  NewUserRequest(
 			String email,
 			String username,
-			String password
+			String password,
+			String userType,
+			String skills,
+			String workExperience,
+			String education,
+			String contactInformation
 	){
 
 	}
@@ -45,6 +50,7 @@ public class TalentHunterApplication {
 		user.setEmail(request.email);
 		user.setPassword(request.password);
 		user.setUsername(request.username);
+		user.setUserType("candidate".equals(request.userType) ? UserType.Candidate : UserType.Recruiter);
 		userRepository.save(user);
 	}
 
@@ -63,6 +69,11 @@ public class TalentHunterApplication {
 		existingUser.setEmail(request.email);
 		existingUser.setPassword(request.password);
 		existingUser.setUsername(request.username);
+		existingUser.setSkills(request.skills);
+		existingUser.setContactInformation(request.contactInformation);
+		existingUser.setWorkExperience(request.workExperience);
+		existingUser.setEducation(request.education);
+
 
 		// Save the updated user
 		userRepository.save(existingUser);

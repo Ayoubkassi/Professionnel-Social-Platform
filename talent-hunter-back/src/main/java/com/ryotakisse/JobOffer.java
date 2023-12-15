@@ -26,12 +26,14 @@ public class JobOffer {
     @ManyToMany
     Set<User> candidates;
 
+    private String creator;
+
 
     public JobOffer(){
 
     }
 
-    public JobOffer(Integer id, String title, String description, String location, String type, String salary, Date date) {
+    public JobOffer(Integer id, String title, String description, String location, String type, String salary, Date date , String creator) {
         this.id = id;
         this.title = title;
         this.description = description;
@@ -39,6 +41,14 @@ public class JobOffer {
         this.type = type;
         this.salary = salary;
         this.date = date;
+        this.creator = creator;
+    }
+
+
+    public String getCreator(){ return creator; }
+
+    public void setCreator(String creator){
+        this.creator = creator;
     }
 
     public Integer getId() {

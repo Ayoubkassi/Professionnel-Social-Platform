@@ -60,7 +60,7 @@ export const Right = styled.div`
     flex-basis: 40%;
     width : 40%;
     color : white;
-    padding : 4.5rem 9rem;
+    padding : 4.5rem 7rem;
     color : black;
 
     display : flex;

@@ -47,7 +47,9 @@ const Header = () => {
             <HeaderOption title = "Jobs" Icon={ LocalOfferIcon } />
             </a>
             <HeaderOption title = "Notifications" Icon={NotificationsIcon} />
-            <HeaderOption title="me" avatar={myImage} />
+            <a href="/profile"  style={{ color : 'inherit' , textDecoration : 'none' }}>
+              <HeaderOption title="me" avatar={myImage} />
+            </a>
       </div>
     </div>
   )

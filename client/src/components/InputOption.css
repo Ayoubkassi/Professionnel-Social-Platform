@@ -1,10 +1,13 @@
 .inputOption{
     display: flex;
-    align-items: center;
-    margin-top: 15px;  
+    align-items: flex-start;
+    margin-top: 12px;  
     color: gray;
     padding: 10px;
     cursor: pointer;
+    border-radius: 10px;
+    height: 45px;
+
 }
 
 .inputOption:hover{
@@ -15,3 +18,8 @@
 .inputOption > h4{
     margin-left: 5px;
 }
+
+.inputOption.clicked {
+    background-color: #0D6EFD;
+    color : white;
+  }

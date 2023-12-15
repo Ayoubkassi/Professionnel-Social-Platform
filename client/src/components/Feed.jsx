@@ -6,15 +6,31 @@ import SubscriptionsIcon from '@mui/icons-material/Subscriptions';
 import EventNoteIcon from '@mui/icons-material/EventNote';
 import CalendarViewDayIcon from '@mui/icons-material/CalendarViewDay';
 import Post from './Post';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+
 
 const Feed = () => {
   
-  const [posts , setPosts] = useState([1,2,3,4,5]);  
+  const [posts , setPosts] = useState([1,2]);  
 
   const createPost = (e) => {
     e.preventDefault();
   }
+
+  const fetchData = async () => {
+    try {
+      const response = await axios.get('http://localhost:5000/api/v1/jobs');
+      console.log('Data', response.data);
+      setPosts(response.data);
+    } catch (error) {
+      console.error('Fetching data failed', error.response?.data || 'Unknown error');
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []); // Empty dependency array means this effect runs once on mount
 
 
   return (
@@ -36,7 +52,7 @@ const Feed = () => {
         </div>
       </div> 
 
-        { posts.map(post =>  <Post name="Hamid Zghanghan" description="Recruiter in Datadog" message="We are recruiting for our summer internships software engineering , be ready and pick ur keyboard!!"/>) }
+        { posts.map(post =>  <Post idPost={post.id} name={post.creator} description="Recruiter in Datadog" message={post.description} />) }
      
     </div>
   )
