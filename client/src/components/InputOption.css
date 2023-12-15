@@ -1,7 +1,7 @@
 .inputOption{
     display: flex;
-    align-items: center;
-    margin-top: 15px;  
+    align-items: flex-start;
+    margin-top: 12px;  
     color: gray;
     padding: 10px;
     cursor: pointer;

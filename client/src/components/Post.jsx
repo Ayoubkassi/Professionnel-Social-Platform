@@ -7,6 +7,7 @@ import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined';
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 import myImage from '../assets/datadog.jpeg';
 import scar from '../assets/scar.jpg';
+import jobImage from '../assets/job.jpg'
 
 function Post({ name , description , message , photoUrl }) {
   return (
@@ -21,7 +22,7 @@ function Post({ name , description , message , photoUrl }) {
 
       <div className="post__body">
         <p>{message}</p>
-        <img src={myImage} alt="" className='post__image' />
+        <img src={jobImage} alt="" className='post__image' />
       </div>
 
       <div className="post__buttons">

@@ -35,7 +35,9 @@ const Login = () => {
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [error , setError] = useState('');
   const navigate = useNavigate();
+
 
   const handleLogin = async () => {
     try {
@@ -44,13 +46,17 @@ const Login = () => {
         passlogin: password,
       });
 
+
       // Handle successful login here, e.g., redirect to another page
       console.log('Login successful', response.data);
       // Redirect to the home page
+      console.log('data' , response.data.id);
+      localStorage.setItem('userId', response.data.id);
       navigate('/');
     } catch (error) {
       // Handle login error here
       console.error('Login failed', error.response.data);
+      setError('Invalid Username/Password');
     }
   };
 
@@ -65,9 +71,10 @@ const Login = () => {
         <Right>
             <LogTitle>Log in to Talent Hunter</LogTitle>
             <LogInfo>Enter your email and password to log in</LogInfo>
+            <p style={{ color : 'red' , fontWeight : 'bold' , margin : '18px 0' }} >{error}</p>
             <TextField
               id="outlined-basic"
-              label="Email"
+              label="Username"
               variant="outlined"
               value={email}
               onChange={(e) => setEmail(e.target.value)}

@@ -23,17 +23,17 @@ function EditProfile() {
           noValidate
           autoComplete="off"
         >
-          <div className='row'>
+          <div className='rowa'>
             <TextField id="outlined-basic" label="Username" variant="outlined" style={{width : '100%' , marginRight : '20px'}} />
             <TextField id="outlined-basic" label="Email" variant="outlined" style={{width : '100%'}} />
           </div>
 
-          <div className='row'>
+          <div className='rowa'>
             <TextField id="outlined-basic" label="Education" variant="outlined" style={{width : '100%' , marginRight : '20px'}} />
             <TextField id="outlined-basic" label="Contact Information" variant="outlined" style={{width : '100%'}} />
           </div>
 
-          <div className='row'>
+          <div className='rowa'>
               <TextField
               style={{width : '100%' , marginRight : '20px'}}
               id="outlined-multiline-static"

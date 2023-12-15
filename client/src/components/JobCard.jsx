@@ -15,7 +15,9 @@ import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import dataImage from '../assets/datadog.jpeg'
-import myImage from '../assets/me.jpg'
+import myImage from '../assets/scar.jpg'
+import jobImage from '../assets/job.jpg'
+
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -55,7 +57,7 @@ function JobCard() {
       <CardMedia
         component="img"
         height="194"
-        image={dataImage}
+        image={jobImage}
         alt="Paella dish"
       />
       <CardContent>
