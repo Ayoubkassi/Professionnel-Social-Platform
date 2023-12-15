@@ -16,7 +16,7 @@ function Jobs() {
     <div className='app jobs'>
         <Header />
         <h1>My Jobs</h1>
-        <Button style={{ width : '150px', height : '40px' , margin : '10px 100px' }} variant="contained"><a href ="/craetejob" style={{ color : 'inherit' , textDecoration : 'none' }} >Create Jobs</a></Button>
+        <Button style={{ width : '150px', height : '40px' , margin : '10px 100px' }} variant="contained"><a href ="/jobcreate" style={{ color : 'inherit' , textDecoration : 'none' }} >Create Jobs</a></Button>
         <Box sx={{ width: '100%' , padding : '100px'}}>
             <Grid container rowSpacing={3} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                 

@@ -52,7 +52,7 @@ const Feed = () => {
         </div>
       </div> 
 
-        { posts.map(post =>  <Post name={post.creator} description="Recruiter in Datadog" message={post.description} />) }
+        { posts.map(post =>  <Post idPost={post.id} name={post.creator} description="Recruiter in Datadog" message={post.description} />) }
      
     </div>
   )

@@ -1,13 +1,19 @@
-import './InputOption.css'
+import React, { useState } from 'react';
+import './InputOption.css';
 
-function InputOption({Icon , title, color}) {
+function InputOption({ Icon, title, color }) {
+  const [clicked, setClicked] = useState(false);
+
+  const handleClick = () => {
+    setClicked(!clicked);
+  };
+
   return (
-    <div className='inputOption'>
-      <Icon style={{color : color}} />
-      <h4>{title}</h4>
-      
+    <div className={`inputOption ${clicked ? 'clicked' : ''}`} onClick={handleClick}>
+      <Icon style={{ color: color }} />
+      <h4 style={{ color: clicked ? 'white' : 'inherit' }}>{title}</h4>
     </div>
-  )
+  );
 }
 
-export default InputOption
+export default InputOption;
