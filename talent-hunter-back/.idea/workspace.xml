@@ -5,20 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a80a7f6d-049e-4892-952a-4e484d042c8a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/pages/CreatJob.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/pages/Jobs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/Jobs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryotakisse/JobOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryotakisse/JobOffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryotakisse/TalentHunterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryotakisse/TalentHunterApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryotakisse/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryotakisse/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryotakisse/TalentHunterApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryotakisse/TalentHunterApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryotakisse/JobOffer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryotakisse/JobOffer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryotakisse/TalentHunterApplication$NewJobRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryotakisse/TalentHunterApplication$NewJobRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryotakisse/TalentHunterApplication$NewLoginRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryotakisse/TalentHunterApplication$NewLoginRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryotakisse/TalentHunterApplication$NewUserRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryotakisse/TalentHunterApplication$NewUserRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryotakisse/TalentHunterApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryotakisse/TalentHunterApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryotakisse/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryotakisse/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.ryotakisse.TalentHunterApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.ryotakisse.TalentHunterApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.ryotakisse.TalentHunterApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.ryotakisse.TalentHunterApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/talent-hunter-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/talent-hunter-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +130,8 @@
       <workItem from="1701958881678" duration="711000" />
       <workItem from="1702132781989" duration="1760000" />
       <workItem from="1702218421591" duration="4349000" />
-      <workItem from="1702494693905" duration="20034000" />
+      <workItem from="1702494693905" duration="20815000" />
+      <workItem from="1704478489259" duration="921000" />
     </task>
     <servers />
   </component>

@@ -2,6 +2,7 @@
 /home/kassi/Desktop/Projects/Professionnel-Social-Platform/talent-hunter-back/src/main/java/com/ryotakisse/TalentHunterApplication.java
 /home/kassi/Desktop/Projects/Professionnel-Social-Platform/talent-hunter-back/src/main/java/com/ryotakisse/JobOffer.java
 /home/kassi/Desktop/Projects/Professionnel-Social-Platform/talent-hunter-back/src/main/java/com/ryotakisse/Gender.java
+/home/kassi/Desktop/Projects/Professionnel-Social-Platform/talent-hunter-back/src/main/java/com/ryotakisse/CorsConfiguration.java
 /home/kassi/Desktop/Projects/Professionnel-Social-Platform/talent-hunter-back/src/main/java/com/ryotakisse/JobOfferRepository.java
 /home/kassi/Desktop/Projects/Professionnel-Social-Platform/talent-hunter-back/src/main/java/com/ryotakisse/User.java
 /home/kassi/Desktop/Projects/Professionnel-Social-Platform/talent-hunter-back/src/main/java/com/ryotakisse/UserRepository.java

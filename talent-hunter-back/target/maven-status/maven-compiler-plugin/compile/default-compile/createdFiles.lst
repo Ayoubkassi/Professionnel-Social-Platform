@@ -1,9 +1,12 @@
-com/ryotakisse/UserType.class
-com/ryotakisse/TalentHunterApplication$NewUserRequest.class
 com/ryotakisse/JobOffer.class
 com/ryotakisse/User.class
+com/ryotakisse/UserRepository.class
+com/ryotakisse/CorsConfiguration.class
+com/ryotakisse/TalentHunterApplication.class
+com/ryotakisse/UserType.class
+com/ryotakisse/TalentHunterApplication$NewUserRequest.class
 com/ryotakisse/TalentHunterApplication$NewJobRequest.class
 com/ryotakisse/JobOfferRepository.class
-com/ryotakisse/UserRepository.class
+com/ryotakisse/TalentHunterApplication$NewLoginRequest.class
 com/ryotakisse/Gender.class
-com/ryotakisse/TalentHunterApplication.class
+com/ryotakisse/CorsConfiguration$1.class
